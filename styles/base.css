@@ -1,9 +1,62 @@
+.open-sans-font-arbitrary {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
 main {
     display: grid;
 }
 
-nav {
-    display: grid;
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #4f1b95;
 }
 
-nav.li
+nav {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    /* background-color: white; */
+    background-color: rgba(255, 255, 255, 0.938);
+
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li{
+    flex: 1 0 auto;
+}
+
+nav li :hover{
+    /* background-color: rgba(255, 255, 255, 0.557); */
+    background-color: white;
+    color: black;
+    transition: .5s;
+}
+
+nav a {
+    color: #4f1b95;
+    text-decoration: none;
+}
+
+#course-title{
+    color: white;
+    display: block;
+    margin: 0 auto;
+    font-size: x-large;
+    text-align: center;
+}
