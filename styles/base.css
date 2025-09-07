@@ -92,12 +92,15 @@ main h1{
     grid-column: 1/4;
     text-align: center;
     margin-top: 0;
-    background-color: ;
+    color: white;
+    background-color: #4f1b95;
 }
 
 .card h3 {
     grid-column: 1/4;
-    
+    color: white;
+    background-color: #4f1b95;
+    text-align: center;
 }
 
 #primary_card img {
