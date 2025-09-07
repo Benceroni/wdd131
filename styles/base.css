@@ -53,6 +53,10 @@ nav li :hover{
     transition: .5s;
 }
 
+nav a :hover{
+    opacity: 1;
+}
+
 nav a {
     color: #4f1b95;
     text-decoration: none;
