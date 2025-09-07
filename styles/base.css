@@ -1,6 +1,5 @@
 .open-sans-font-arbitrary {
   font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
   font-variation-settings:
@@ -84,7 +83,7 @@ main h1{
     grid-column: 1/2;
     grid-row: 2/3;
     display: grid;
-    margin: 1;
+
     grid-template-columns: 1fr 1em 1.5fr ;
 }
 
