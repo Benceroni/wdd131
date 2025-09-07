@@ -7,15 +7,22 @@
     "wdth" 100;
 }
 
-
-main {
-    display: grid;
-}
-
 body {
     font-family: "Open Sans", sans-serif;
     background-color: #4f1b95;
 }
+
+#course-title{
+    color: white;
+    display: block;
+    margin: 0 auto;
+    font-size: large;
+    text-align: center;
+    padding: .5em;
+}
+
+
+
 
 nav {
     margin: 0 auto;
@@ -53,10 +60,40 @@ nav a {
     text-decoration: none;
 }
 
-#course-title{
-    color: white;
-    display: block;
+main {
+    display: grid;
+    max-width: 800px;
     margin: 0 auto;
-    font-size: x-large;
+    grid-template: auto;
+}
+
+main h1{
+    grid-column: 1/4;
+}
+
+/* .card{
+    
+} */
+
+#primary_card{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: grid;
+    grid-template: auto;
+}
+
+#primary_card.
+
+#secondary_card{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+footer{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
