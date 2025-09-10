@@ -6,4 +6,9 @@
     main h1{
         grid-column: 1/4;
     }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }

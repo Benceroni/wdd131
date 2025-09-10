@@ -38,6 +38,20 @@ header{
     padding: 1em auto;
 }
 
+#menu{
+    display: block;
+    text-decoration: none;
+    padding: .5rem;
+}
+
+#menu::before{
+    content: "≡";
+}
+
+#menu::after{
+    content: "close";
+}
+
 nav{
     
 }
