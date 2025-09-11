@@ -9,10 +9,14 @@ header,main,footer{
 
 header, footer{
     max-width: 800px;
+    background-color: rgb(238, 180, 240);
+
 }
 
+
+
 main{
-    max-width: 600px;
+    max-width: 700px;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;
@@ -20,15 +24,22 @@ main{
 
 figure{
     border: solid;
-    border-width: 1rem;
-    border-color: rgba(0, 0, 0, 0.219);
-    border-radius: .5rem;
-    object-fit: contain;
+    box-shadow: .25em .25em .5em rgba(238, 180, 240, 0.708);
+    border-radius: .15rem;
+    border-width: .15em;
+    border-color: rgb(199, 139, 201);
+    
+    margin: 0 auto;
 }
+
+figure img{
+    width: 100%;
+}
+
 figcaption{
     text-align: center;
     padding: 10px;
-    background-color: aqua;
+    background-color: rgb(238, 180, 240);
 }
 
 main h1{
@@ -49,10 +60,22 @@ header{
 
 #menu::before{
     content: "≡";
+    position: absolute;
+    right: 2rem;
+    top: 4rem;
 }
 
-#menu::after{
+#menu.show::before{
     content: "close";
+    position: inherit;
+}
+
+.navigation li{
+    display: none;
+}
+
+.show li{
+    display: block;
 }
 
 nav{
@@ -62,8 +85,16 @@ nav{
 nav a {
     text-align: center;
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+}
 
+nav .active{
+    text-decoration: underline;
+}
+
+nav a:hover{
+    background-color: white;
 }
 
 nav ul {
@@ -80,7 +111,6 @@ nav ul li{
 footer{
     margin: 1em auto;
     padding: 1em 0;
-    background-color: white;
     display: flex;
     flex-direction: column;
     text-align: center;
