@@ -20,7 +20,7 @@ main{
 
 figure{
     border: solid;
-    border-width: 1 em;
+    border-width: 1rem;
     border-color: rgba(0, 0, 0, 0.219);
     border-radius: .5rem;
     object-fit: contain;
@@ -38,7 +38,7 @@ main h1{
 }
 
 header{
-    padding: 1em auto;
+    padding: 1em;
 }
 
 #menu{
