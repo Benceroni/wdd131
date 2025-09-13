@@ -8,3 +8,7 @@ hambutton.addEventListener('click', function() {
     navId.classList.toggle('show');
     hambutton.classList.toggle('show');
 });
+
+firstList = document.querySelector("li");
+
+firstList.style.fontWeight = 700;
