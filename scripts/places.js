@@ -1,0 +1,2 @@
+document.getElementById("currentyear").innerHTML = "©" + new Date().getFullYear() + "- Spencer Bell - Idaho, United States"
+document.getElementById("lastModified").innerHTML = "last Modification: " + document.lastModified
