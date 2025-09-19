@@ -1,6 +1,36 @@
 :root {
-    --primary_color : purple;
-    --secondary_color : teal;
-    --accent_color : black;
+    --primary_color :#00866c;
+    --secondary_color : #eb82c8;
+    --accent_color : #53424c;
     }
 
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+header,main,footer{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: var(--primary_color);
+    padding: 2rem 0;
+    font-weight: 100;
+}
+
+header h1{
+    font-size: 3rem;
+    padding: .5rem 1rem;
+    margin: 0 auto;
+    background-color: var(--secondary_color);
+    width: fit-content;
+    border-radius: .5rem;
+    
+}
+
+
+.heroimage img{
+    width: 100%;
+    height: auto;
+}
