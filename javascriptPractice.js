@@ -38,3 +38,23 @@ for (i = 0; i<DAYS; i+=1){
     let nextDay = new Date().setDate(new Date().getDate() + i)
     console.log(new Intl.DateTimeFormat("en-US",options).format(nextDay))
 }
+
+
+let firstName = 'Antonia';
+let lastName = 'Francesca';
+
+function fullName(first, last){
+    return(String(first + " " + last));
+}
+
+console.log(fullName(firstName,lastName));
+
+let fullName = function(first,last){
+    return '${first} ${last}';
+}
+
+const fullName = (first,last) => '${first} ${last}';
+// 
+
+document.getElementById("fullName") = (firstName,lastName) => '${firstName} ${lastName}';
+//forgot the innerHTML. Oh also- should've  called the function not made a new one.
