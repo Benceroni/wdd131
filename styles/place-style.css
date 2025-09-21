@@ -48,11 +48,9 @@ section > p:nth-child(even){
     font-weight: bold;
 }
 
-/* section.weather > p:nth-child(odd){
-    text-align: right;
-    font-weight: bold;
-} */
-
+section p::after{
+    margin: 0;
+}
 section p{
     margin: 0;
 }
