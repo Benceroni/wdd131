@@ -1,0 +1,16 @@
+caption{
+    caption-side: bottom;
+}
+
+tbody tr:nth-child(odd){
+    background-color: beige;
+}
+
+thead{
+    background-color: black;
+    color: white;
+}
+
+td{
+    text-align: center;
+}
