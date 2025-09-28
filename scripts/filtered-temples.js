@@ -188,6 +188,9 @@ function showSmall(){
     smallTemples.forEach(temple =>{renderTemple(temple)});
 }
 
+//yeah I know my code is kinda cursed. Yeah I'm chill with that. If valve is allowed to have a coconut .jpg that f*tchin breaks the source engine when it's removed, I can repeat some code in an obtuse manner :)
+
+
 showAll();
 
 console.log("yeah bruh")
