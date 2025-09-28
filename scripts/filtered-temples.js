@@ -100,10 +100,30 @@ function allEventListeners(){
 
             document.querySelector("#homeLink").addEventListener('click',function(){
               clearLinkClasslist()
-              document.querySelector("#homelink").classList.add('active');
-          }
+              showAll()
+              document.querySelector("#homeLink").classList.add('active');
+          })
+            document.querySelector("#oldLink").addEventListener('click',function(){
+              clearLinkClasslist()
+              showOld()
+              document.querySelector("#oldLink").classList.add('active');
+          })
+            document.querySelector("#newLink").addEventListener('click',function(){
+              clearLinkClasslist()
+              showNew()
+              document.querySelector("#newLink").classList.add('active');
+          })
+            document.querySelector("#largeLink").addEventListener('click',function(){
+              clearLinkClasslist()
+              showLarge()
+              document.querySelector("#largeLink").classList.add('active');
+          })
+            document.querySelector("#smallLink").addEventListener('click',function(){
+              clearLinkClasslist()
+              showSmall()
+              document.querySelector("#smallLink").classList.add('active');
+            }
         )
-
 }
 
 function clearLinkClasslist(){
@@ -115,10 +135,6 @@ function clearLinkClasslist(){
 }
 
 allEventListeners(linkArray);
-
-firstList = document.querySelector("li");
-
-firstList.style.fontWeight = 700;
 
 function renderTemple(temple){
     console.log(Object.keys(temple));
@@ -134,36 +150,44 @@ function renderTemple(temple){
         </figcaption>
         </figure>
     `
-    document.querySelector("#templeDiv").innerHTML += templeCard
+    document.querySelector("main").innerHTML += templeCard
+}
+
+function clearTemples(){
+    document.querySelector("main").innerHTML = "<h2>Home</h2>";
 }
 
 function showAll(){
+    clearTemples()
     temples.forEach(temple => {
         renderTemple(temple);
     });
 }
 
 function showOld(){
+    clearTemples()
     const oldTemples =temples.filter(temple => temple.dedicated.substring(0,4) < 1900)
     oldTemples.forEach(temple => {renderTemple(temple)});
 }
 
 function showNew(){
+    clearTemples()
     const newTemples = temples.filter(temple => temple.dedicated.substring(0,4) > 2000)
     newTemples.forEach(temple => {renderTemple(temple)});
 }
 
 function showLarge(){
+    clearTemples()
     const largeTemples = temples.filter(temple => temple.area > 90000)
     largeTemples.forEach(temple => {renderTemple(temple)})
 }
 
 function showSmall(){
+    clearTemples()
     const smallTemples = temples.filter(temple => temple.area <10000)
     smallTemples.forEach(temple =>{renderTemple(temple)});
 }
 
-showSmall();
-
+showAll();
 
 console.log("yeah bruh")
