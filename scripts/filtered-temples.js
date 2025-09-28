@@ -1,3 +1,8 @@
+
+
+
+
+
 document.getElementById("currentyear").innerHTML = "©" + new Date().getFullYear() + "- Spencer Bell - Idaho, United States"
 document.getElementById("lastModified").innerHTML = "last Modification: " + document.lastModified
 
@@ -89,22 +94,63 @@ hambutton.addEventListener('click', function() {
     hambutton.classList.toggle('show');
 });
 
+const linkArray = ["home","old","new","large","small"];
+
+function allEventListeners(_array){
+        _array.forEach(link => document.querySelector(`"#${link}"`).addEventListener('click',function(){
+
+        }))
+}
+
+function clearLinkClasslist()
+
 firstList = document.querySelector("li");
 
 firstList.style.fontWeight = 700;
 
 function renderTemple(temple){
-    const newTemple = `<figure><img src=${temple.imageURL}></figure>`
-    document.querySelector("#templeDiv").innerHTML = newTemple
+    console.log(Object.keys(temple));
+    console.log(temple.imageUrl)
+    const newTemple = `<figure><img src=${temple["imageUrl"]}></figure>`
+    
+    const templeCard = `<figure>
+        <figcaption>
+        <h3>${temple.templeName}</h3></p><small>Location: </small>${temple.location}</p>
+        </p><small>Dedicated: </small>${temple.dedicated}</p>
+        </p><small>Size: </small>${temple.area} Sq ft</p>
+        <img src=${temple.imageUrl} alt =${temple.templeName} loading="lazy">
+        </figcaption>
+        </figure>
+    `
+    document.querySelector("#templeDiv").innerHTML += templeCard
 }
 
 function showAll(){
-    console.log("yeah bruh");
     temples.forEach(temple => {
         renderTemple(temple);
     });
 }
 
-showAll();
+function showOld(){
+    const oldTemples =temples.filter(temple => temple.dedicated.substring(0,4) < 1900)
+    oldTemples.forEach(temple => {renderTemple(temple)});
+}
+
+function showNew(){
+    const newTemples = temples.filter(temple => temple.dedicated.substring(0,4) > 2000)
+    newTemples.forEach(temple => {renderTemple(temple)});
+}
+
+function showLarge(){
+    const largeTemples = temples.filter(temple => temple.area > 90000)
+    largeTemples.forEach(temple => {renderTemple(temple)})
+}
+
+function showSmall(){
+    const smallTemples = temples.filter(temple => temple.area <10000)
+    smallTemples.forEach(temple =>{renderTemple(temple)});
+}
+
+showSmall();
 
 console.log("yeah bruh")
