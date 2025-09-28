@@ -94,15 +94,27 @@ hambutton.addEventListener('click', function() {
     hambutton.classList.toggle('show');
 });
 
-const linkArray = ["home","old","new","large","small"];
+const linkArray = ["homeLink","oldLink","newLink","largeLink","smallLink"];
 
-function allEventListeners(_array){
-        _array.forEach(link => document.querySelector(`"#${link}"`).addEventListener('click',function(){
+function allEventListeners(){
 
-        }))
+            document.querySelector("#homeLink").addEventListener('click',function(){
+              clearLinkClasslist()
+              document.querySelector("#homelink").classList.add('active');
+          }
+        )
+
 }
 
-function clearLinkClasslist()
+function clearLinkClasslist(){
+  document.querySelector("#homeLink").classList.remove('active');
+  document.querySelector("#oldLink").classList.remove('active');
+  document.querySelector("#newLink").classList.remove('active');
+  document.querySelector("#largeLink").classList.remove('active');
+  document.querySelector("#smallLink").classList.remove('active');
+}
+
+allEventListeners(linkArray);
 
 firstList = document.querySelector("li");
 
@@ -152,5 +164,6 @@ function showSmall(){
 }
 
 showSmall();
+
 
 console.log("yeah bruh")
