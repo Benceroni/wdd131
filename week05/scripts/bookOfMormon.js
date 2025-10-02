@@ -18,7 +18,7 @@ function displayList(_item){
 
     console.log(`Adding ${_item} to unordered list`)
 
-    listItem.textContent =      _item.value
+    listItem.textContent =      _item
     deleteButton.textContent    = "❌";
     deleteButton.classList.add('delete');
     listItem.append(deleteButton);
@@ -36,7 +36,8 @@ function deleteChapter(_textContent){
     console.log("trying to delete: " + _textContent);
     _textContent = _textContent.slice(0,_textContent.length - 1);
     console.log("after slice, trying to delete:" + _textContent);
-    chaptersArray.filter(value => value !== _textContent);
+    chaptersArray = chaptersArray.filter((value) => value !== _textContent);
+    
     setChapterList()
 }
 
@@ -46,7 +47,7 @@ function setChapterList(){
 
 
 button.addEventListener('click', ()=> {
-    if (input.value != null){
+    if (input.value !== ""){
         displayList(input.value);
         chaptersArray.push(input.value);
         setChapterList();
