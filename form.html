@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Temples - WDD 131 - Spencer Bell</title>
+    <meta name="author" content = "Spencer Bell">
+    <meta name="description" content="Responsive temple display for purposes of demonstrating JavaScript competency">
+
+    <link rel="stylesheet" href="styles/form.css">
+    <!-- <link rel="stylesheet" href="styles/.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <fieldset>
+                <legend>Product Name</legend>
+                <select name="Subject" id="" disabled>
+                    <option value="default" selected>Select Product&#9662;</option>
+                </select>
+
+            </fieldset>
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <label><input type="radio" name="rating" value="1" required>☆</label>
+                <label><input type="radio" name="rating" value="2" required>☆☆</label>
+                <label><input type="radio" name="rating" value="3" required>☆☆☆</label>
+                <label><input type="radio" name="rating" value="4" required>☆☆☆☆</label>
+                <label><input type="radio" name="rating" value="5" required>☆☆☆☆☆</label>
+            </fieldset>
+            <fieldset>
+                <legend>Date of Installation</legend>
+                <label><input type="date" id="dateInput" name="dateInput" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Which features did you find useful in the product?(check all  that apply)</legend>
+                <label><input type="checkbox" name="Durability" value="yes" >Durability</label>
+                <label><input type="checkbox" name="Ease of Use" value="yes" >Ease of Use</label>
+                <label><input type="checkbox" name="Performance" value="yes" >Performance</label>
+                <label><input type="checkbox" name="Design" value="yes">Design</label>
+            </fieldset>
+            <fieldset>
+                <legend>Written Review(Optional)</legend>
+                <label><input type="textarea" id="writtenReview" name="writtenReview"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Your Name(Optional)</legend>
+                <label><input type="text"></label>
+            </fieldset>
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <span id="currentyear"></span>
+        <span id="lastModified"></span>
+    </footer>
+</body>
+</html>

@@ -2,3 +2,12 @@ header,main,footer{
     font-family: "Lexend", sans-serif;
     margin: 0 auto;
 }
+
+.block{
+    /* background-color: aqua; */
+}
+
+.block#colors li{
+    background-color: azure;
+    display:flex;
+}
