@@ -1,10 +1,66 @@
+header, footer, main{
+    margin: 0 auto;
+    max-width: 500px;
+    font-family: sans-serif;
+}
+
 form{
-    background-color: rgb(159, 98, 216);
+    background-color: rgb(85, 37, 130);
     padding: 1rem;
+    border: 2px solid black;
+    border-radius: .5rem;
+    color: white;
 }
 fieldset{
     margin-bottom: 1rem;
     border: none;
     max-width: 500px;
+    width: 100%;
 }
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+
+fieldset input{
+        margin: 20px 0;
+}
+
+label {
+    padding-left: 1rem;
+}
+
+/* form input:not([type="submit"]){
+} */
+
+form input[type = "submit"]{
+    width: 94%;
+    margin: 0 4%;
+    /* padding: 25px; */
+}
+
+
+form input[type = "radio"],
+form input[type = "checkbox"]
+{
+    margin-right:.5rem;
+}
+
+
+form textarea{
+    resize: none;
+    width: fit-content;
+}
+
+label{
+    display: inline;
+}
+
+#rating,#features{
+    display: grid;
+}
+
+footer, header{
+    padding: 3rem;
+    color: rgb(45, 11, 77);
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: .5rem;
+    
+}

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Temples - WDD 131 - Spencer Bell</title>
+    <title>Form Practice - wdd131 - Spencer Bell</title>
     <meta name="author" content = "Spencer Bell">
-    <meta name="description" content="Responsive temple display for purposes of demonstrating JavaScript competency">
+    <meta name="description" content="Form practice for the purpose of torturing me.">
 
     <link rel="stylesheet" href="styles/form.css">
     <!-- <link rel="stylesheet" href="styles/.css"> -->
@@ -22,12 +22,11 @@
         <form method="get" action="review.html">
             <fieldset>
                 <legend>Product Name</legend>
-                <select name="Subject" id="subject" disabled>
-                    <option value="default" selected>Select Product&#9662;</option>
+                <select name="productSelect" id="productSelect" >
+                    <option value="default" disabled selected>Select Product&#9662;</option>
                 </select>
-
             </fieldset>
-            <fieldset>
+            <fieldset id="rating">
                 <legend>Overall Rating</legend>
                 <label><input type="radio" name="rating" value="1" required>☆</label>
                 <label><input type="radio" name="rating" value="2" required>☆☆</label>
@@ -39,7 +38,7 @@
                 <legend>Date of Installation</legend>
                 <label><input type="date" id="dateInput" name="dateInput" required></label>
             </fieldset>
-            <fieldset>
+            <fieldset id="features">
                 <legend>Which features did you find useful in the product?(check all  that apply)</legend>
                 <label><input type="checkbox" name="Durability" value="yes" >Durability</label>
                 <label><input type="checkbox" name="Ease of Use" value="yes" >Ease of Use</label>
@@ -48,7 +47,7 @@
             </fieldset>
             <fieldset>
                 <legend>Written Review(Optional)</legend>
-                <label><textarea id="writtenReview" name="writtenReview"></textarea></label>
+                <label><textarea id="writtenReview" name="writtenReview" ></textarea></label>
             </fieldset>
             <fieldset>
                 <legend>Your Name(Optional)</legend>
