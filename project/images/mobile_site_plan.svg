@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 2700 5100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-27,16)">
+        <g transform="matrix(94.9312,0,0,94.9312,2700,68)">
+        </g>
+        <text x="1656.92px" y="68px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:94.931px;">[Page One: Mobile V<tspan x="2531.18px 2552.27px " y="68px 68px ">ie</tspan>w]</text>
+    </g>
+    <g transform="matrix(1,0,0,0.882863,6.16496,390.698)">
+        <rect x="0" y="245" width="2693.84" height="2305" style="fill:white;stroke:black;stroke-width:30.5px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,12.6435,1229.97)">
+        <text x="100px" y="610px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:295.962px;">hero image/</text>
+        <g transform="matrix(295.962,0,0,295.962,1383.13,915.644)">
+        </g>
+        <text x="100px" y="915.644px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:295.962px;">site name</text>
+    </g>
+    <g transform="matrix(1,0,0,1,0,-2041)">
+        <rect x="0" y="2178" width="2700" height="325" style="fill:white;stroke:black;stroke-width:28.77px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,141.933,-2036.35)">
+        <g transform="matrix(178.694,0,0,178.694,2048.97,2381)">
+        </g>
+        <text x="241px" y="2381px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:178.694px;">navigation ↓  pull down</text>
+    </g>
+    <g transform="matrix(1,0,0,1,0,147)">
+        <rect x="0" y="2642" width="2693.84" height="290" style="fill:white;stroke:black;stroke-width:28.77px;"/>
+    </g>
+    <g transform="matrix(1,0,0,1,293.208,-16.756)">
+        <g transform="matrix(178.694,0,0,178.694,1910.62,2997)">
+        </g>
+        <text x="192px" y="2997px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:178.694px;">sub heading/topic link</text>
+    </g>
+    <rect x="49" y="3145" width="2590" height="1206" style="fill:white;stroke:black;stroke-width:28.77px;"/>
+    <g transform="matrix(1,0,0,1,-49.8664,105.941)">
+        <g transform="matrix(256.873,0,0,256.873,2422.22,3588)">
+        </g>
+        <text x="394.712px" y="3588px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:256.873px;">Associated image</text>
+    </g>
+    <g transform="matrix(1,0,0,1,-228,13)">
+        <text x="344.469px" y="764px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:168.922px;">*pull down shows navigation</text>
+        <text x="344.469px" y="938.448px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:168.922px;">links down with de-saturated</text>
+        <text x="344.469px" y="1112.9px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:168.922px;">and darkened hero image as</text>
+        <g transform="matrix(168.922,0,0,168.922,1293,1287.34)">
+        </g>
+        <text x="344.469px" y="1287.34px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:168.922px;">background*</text>
+    </g>
+    <rect x="0" y="4614" width="2700" height="486" style="fill:white;stroke:black;stroke-width:28.77px;"/>
+    <g transform="matrix(1,0,0,1,524.641,145)">
+        <g transform="matrix(168.922,0,0,168.922,1708.76,4763)">
+        </g>
+        <text x="0px" y="4763px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:168.922px;">footer with necessities</text>
+    </g>
+    <g transform="matrix(168.922,0,0,168.922,1721.59,4534)">
+    </g>
+    <text x="69px" y="4534px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:168.922px;">*repeat once or twice*</text>
+</svg>
