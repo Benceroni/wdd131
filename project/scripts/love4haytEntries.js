@@ -16,12 +16,24 @@ const entries =[
     },
     {
         date: "2025-02-21",
-        imageReference: "",
+        imageReference: "wireframe_one.webp",
         text: "The Rav4 died again. Rip"
     }
 ]
+//template
+// ,
+//     {
+//         //?tags: ["",]
+//         date: "",
+//         ImageReference: "",
+//         text: ""
+//     }
 
-const monthNames = ["January",
+// date is formatted yyyy-mm-dd
+// image referecne is just the file name within "images/image_name.webp"
+
+const monthNames = [
+    "January",
     "February",
     "March",
     "April",
@@ -47,27 +59,12 @@ function assembleFormattedDate(_date){
     return `${_date.substring(8,10)} ${getMonthStringFromFullDate(_date)} ${_date.substring(0,4)}`
 }
 
-console.log(assembleFormattedDate("2018-12-10"));
- 
+// console.log(assembleFormattedDate("2018-12-10"));
+
 entries.forEach(entry => 
     document.querySelector("#entries").innerHTML +=
-    assembleEntry(assembleFormattedDate(entry.date),entry.ImageReference,entry.text));
-
-
+    assembleEntry(assembleFormattedDate(entry.date),entry.imageReference,entry.text));
 
 function assembleEntry(_date,_imageReference,_text){
     return `<H3>${_date}</H3><img src ="images/${_imageReference}"><p>${_text}</p>`
 }
-
-
-
-//template
-// ,
-//     {
-//         date: "",
-//         ImageReference: "",
-//         text: ""
-//     }
-
-// date is formatted yyyy-mm-dd
-// image referecne is just the file name within "images/image_name.webp"
