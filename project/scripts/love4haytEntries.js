@@ -20,6 +20,7 @@ const entries =[
         text: "The Rav4 died again. Rip"
     }
 ]
+
 //template
 // ,
 //     {
@@ -66,5 +67,5 @@ entries.forEach(entry =>
     assembleEntry(assembleFormattedDate(entry.date),entry.imageReference,entry.text));
 
 function assembleEntry(_date,_imageReference,_text){
-    return `<H3>${_date}</H3><img src ="images/${_imageReference}"><p>${_text}</p>`
+    return `<H3>${_date}</H3><img src ="images/${_imageReference}" alt="" loading="lazy"><p>${_text}</p>`
 }
