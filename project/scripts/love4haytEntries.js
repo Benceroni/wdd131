@@ -50,22 +50,40 @@ const monthNames = [
 
 function getMonthStringFromFullDate(_fullDate){
     const monthAsInteger = parseInt(_fullDate.substring(5,7));
-    console.log(monthAsInteger)
+    // console.log(monthAsInteger)
     return monthNames[monthAsInteger-1]
 }
-
-// console.log(getMonthStringFromFullDate("0000-08-00"));
 
 function assembleFormattedDate(_date){
     return `${_date.substring(8,10)} ${getMonthStringFromFullDate(_date)} ${_date.substring(0,4)}`
 }
 
-// console.log(assembleFormattedDate("2018-12-10"));
-
+function showEntries(){
+document.querySelector("#entries").innerHTML="";
 entries.forEach(entry => 
     document.querySelector("#entries").innerHTML +=
     assembleEntry(assembleFormattedDate(entry.date),entry.imageReference,entry.text));
+}
 
 function assembleEntry(_date,_imageReference,_text){
     return `<H3>${_date}</H3><img src ="images/${_imageReference}" alt="" loading="lazy"><p>${_text}</p>`
 }
+
+function sortByNewest(){
+    entries.sort(function(a,b){
+        return b.date.replace(/-/g, "") - a.date.replace(/-/g, "");
+    });
+    showEntries();
+}
+
+function sortByOldest(){
+    entries.sort(function(a,b){
+        return a.date.replace(/-/g, "") - b.date.replace(/-/g, "");
+    });
+    showEntries();
+}
+
+document.querySelector("#newest").addEventListener('click', function(){sortByNewest()})
+document.querySelector("#oldest").addEventListener('click', function(){sortByOldest()})
+sortByNewest();
+showEntries();

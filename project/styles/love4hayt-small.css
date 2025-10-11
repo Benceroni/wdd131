@@ -61,3 +61,33 @@ nav a{
 #menu{
     text-decoration: none;
 }
+
+footer{
+    display: grid;
+    text-align: center;
+}
+
+footer span{
+    padding: .5rem;
+}
+
+#emailSignup{
+    margin: 0 auto;
+    display: grid;
+    /* width: 95%; */
+    max-width: 400px;
+}
+#emailSignup input, #emailSignup button{
+    border: none;
+    text-align: center;
+    /* min-width: fit-content; */
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin: .5rem
+}
+
+#emailSignup button{
+    background-color: var(--primary-color);
+    color: var(--accentColor);
+}
+
