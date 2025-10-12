@@ -11,6 +11,7 @@
         grid-column: 1/4;
         text-align: center;
     }
+    
     header{
         display: flex;
         align-items: center;

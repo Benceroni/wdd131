@@ -37,22 +37,80 @@ header img{
     padding: 1rem;
 }
 
-.navigation{
-    padding: 0;
-    display: grid;
-    gap: .25rem;
+#heroContainer img{
+    margin-top: 5.5rem;
+}
+
+#planning img, #mainLinks img{
+    width: 100%;
+}
+
+#mainLinks a{
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+}
+
+#menu::before{
+    font-size: x-large;
+    content: "Navigation";
+    position: absolute;
+    text-align: center;
+    right: 24px;
+    left: 24px;
+    top: 24px;
+    padding: 1.5rem;
+    background-color: var(--primary-color);
+}
+
+#menu.show::before{
+    content: "Close";
+    position: absolute;
 }
 
 .navigation li{
-    padding: 1rem;
+    display: none;
     text-align: center;
     width: 100%;
-    
 }
+
+.sortOrganization{
+    gap: .25rem;
+    display: grid;
+    padding: 0;
+}
+
+
+
+.sortOrganization li{
+    padding: 0;
+    display: grid;
+    text-decoration: none;
+    text-align: center;
+    /* width: 100%; */
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.show li{
+    display: grid;
+    border-top: 2px solid var(--accentColor);
+}
+
+.navigation{
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    top: 5.2rem;
+    padding: 0;
+    gap: .25rem;
+}
+
+
 
 nav a{
     text-decoration: none;
-    color: var(--accentColor);
+    color: black;
     background-color: var(--primary-color);
     /* margin: 1rem; */
     padding: 1rem;
@@ -62,6 +120,34 @@ nav a{
     text-decoration: none;
 }
 
+
+
+main{
+    padding: .5rem;
+}
+
+#entries img{
+    width: 100%;
+    padding: none;
+}
+
+.entry{
+    /* padding: 1rem; */
+    margin: 1rem 0;
+    background-color: var(--primary-color);
+    border-top: 3px solid var(--accentColor);
+    border-bottom: 3px solid var(--accentColor);
+}
+
+.entry h3{
+    text-align: center;
+}
+
+.entry p{
+    padding: 1rem;
+}
+
+/* FOOOOOOOOOOOOOOOOOOOOOOOOOOOOTER */
 footer{
     display: grid;
     text-align: center;
@@ -90,4 +176,6 @@ footer span{
     background-color: var(--primary-color);
     color: var(--accentColor);
 }
+
+
 

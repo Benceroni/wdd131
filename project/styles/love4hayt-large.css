@@ -1,10 +1,42 @@
 @media screen and (min-width: 1000px) {
+
+    nav ul{
+        flex-direction: row;
+    }
+
+    nav a{
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation{
+        display: flex;
+        position: static;
+    }
+
+    #heroContainer img{
+    margin-top: 0;
+    }
+
+    .sortOrganization{
+        display: flex;
+    }
+
+    .navigation li{
+        display: flex;
+    }
+
     #emailSignup{
         display: flex;
         max-width: 800px;
     }
+
     #emailSignup input,#emailSignup button{
         font-size: 1rem;
         width: 50%;
     }
+
 }

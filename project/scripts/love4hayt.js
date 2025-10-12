@@ -1,5 +1,16 @@
 document.getElementById("currentyear").innerHTML = "©" + new Date().getFullYear() + "- Spencer Bell - Idaho, United States"
 document.getElementById("lastModified").innerHTML = "last Modification: " + document.lastModified
+// ~~~NAVIGATION~~~
+const navElement = document.querySelector('.navigation');
+const hambutton = document.querySelector('#menu');
+
+hambutton.addEventListener('click', function() {
+    navElement.classList.toggle('show');
+    hambutton.classList.toggle('show');
+});
+
+
+//~~~NAVIGATION
 
 // ~~~EMAIL FOOTER~~~
 const emailElement = document.querySelector("#emailSignup");
@@ -47,5 +58,5 @@ function addEmailToSignUp(){
 }
 
 checkForEmailSignUp();
-document.querySelector("#emailSubscribe").addEventListener("click",addEmailToSignUp());
+// document.querySelector("#emailSubscribe").addEventListener("click",addEmailToSignUp());
 //~~~EMAIL FOOTER~~~
